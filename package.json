@@ -79,6 +79,6 @@
 		"typescript": "^3.6.4"
 	},
 	"dependencies": {
-		"vscode": "^1.1.36"
+		"vscode": "^1.1.37"
 	}
 }
