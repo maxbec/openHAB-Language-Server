@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "repository": "maxbec/openHAB-Language-Server",
+  "company": "Private",
+  "projectId": "8b5ee15e-3f91-4735-84c3-bb42f91d0e0b",
+  "workspaceId": "e8ec6dce-7d90-4453-98fb-ffdd3904c25c",
+  "appSlug": "flama-delivery-maxbec",
+  "events": [
+    "check_run",
+    "deployment_status",
+    "pull_request",
+    "pull_request_review",
+    "push",
+    "release",
+    "workflow_run"
+  ]
+}
