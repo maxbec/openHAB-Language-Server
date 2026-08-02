@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "repository": {
+    "owner": "maxbec",
+    "name": "openHAB-Language-Server",
+    "visibility": "public"
+  },
+  "paperclip": {
+    "company": "Private",
+    "projectId": "8b5ee15e-3f91-4735-84c3-bb42f91d0e0b",
+    "workspaceId": "e8ec6dce-7d90-4453-98fb-ffdd3904c25c"
+  },
+  "profile": "fast",
+  "branches": {
+    "default": "main",
+    "stable": "main",
+    "featureTarget": "main"
+  },
+  "commands": {
+    "buildable": "./scripts/delivery buildable",
+    "affected": "./scripts/delivery affected",
+    "full": "./scripts/delivery full",
+    "smoke": "./scripts/delivery smoke",
+    "health": "./scripts/delivery health"
+  },
+  "changeDetection": {
+    "failClosed": true,
+    "broadenOn": [
+      "lockfiles",
+      "authentication",
+      "database_schema",
+      "uncertain_detection"
+    ]
+  },
+  "release": {
+    "enabled": true,
+    "strategy": "release-please",
+    "impactSource": "paperclip_task",
+    "type": "node"
+  },
+  "deployment": {
+    "deployable": false,
+    "provider": "none",
+    "manifestPath": ".deploy/production.yaml"
+  },
+  "secrets": {
+    "source": "infisical",
+    "paths": {
+      "development": "/development"
+    },
+    "exceptionsFile": ".flama/secret-exceptions.json",
+    "projectSlug": "openHAB-Language-Server"
+  },
+  "platform": {
+    "repository": "maxbec/flama-delivery-platform",
+    "version": "0.1.0"
+  }
+}
