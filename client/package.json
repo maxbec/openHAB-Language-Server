@@ -1,25 +1,21 @@
 {
-	"name": "openhab-lsp-client",
-	"description": "Cleint part of the openhab language server extension",
-	"author": "Max Beckenbauer",
-	"license": "EPL-2.0",
-	"version": "0.0.1",
-	"publisher": "max-beckenbauer",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/MaxBec/openHAB-Language-Server"
-	},
-	"engines": {
-		"vscode": "^1.33.0"
-	},
-	"scripts": {
-		"update-vscode": "vscode-install",
-		"postinstall": "vscode-install"
-	},
-	"dependencies": {
-		"vscode-languageclient": "^5.2.1"
-	},
-	"devDependencies": {
-		"vscode": "^1.1.35"
-	}
+  "name": "openhab-lsp-client",
+  "description": "Cleint part of the openhab language server extension",
+  "author": "Max Beckenbauer",
+  "license": "EPL-2.0",
+  "version": "0.0.1",
+  "publisher": "max-beckenbauer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaxBec/openHAB-Language-Server"
+  },
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "dependencies": {
+    "vscode-languageclient": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/vscode": "1.33.0"
+  }
 }
