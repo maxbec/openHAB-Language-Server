@@ -9,8 +9,8 @@ permissions:
 
 jobs:
   final:
-    uses: maxbec/flama-delivery-platform/.github/workflows/reusable-final.yml@e72d73ea4f6bcedb62b333026b2567bfc0cb4ef5
+    uses: maxbec/flama-delivery-platform/.github/workflows/reusable-final.yml@a3aae0cde3aabefea29c7cf3576cf2331d487e1b
     with:
       base-sha: ${{ github.event.pull_request.base.sha }}
       head-sha: ${{ github.event.pull_request.head.sha }}
-      platform-sha: e72d73ea4f6bcedb62b333026b2567bfc0cb4ef5
+      platform-sha: a3aae0cde3aabefea29c7cf3576cf2331d487e1b
